@@ -27,12 +27,6 @@ import com.situ.aichat.ui.designsystem.AppSettingsRow
 import com.situ.aichat.ui.designsystem.AppTopBar
 import com.situ.aichat.ui.onboarding.agreementContent
 
-/**
- * 关于页（P12.1c）。对齐 iOS SettingsView 的「关于」段（版本 + 协议 + 免责声明），并按本项目「GitHub/sideload
- * 分发、纯本地无后端」的实际情况适配：版本（BuildConfig）+ 用户协议复看（复用首启协议正文，只读）+ 免责声明
- * + 致谢。**有意偏离 iOS**：iOS 关于段的隐私政策/技术支持/反馈/服务条款均指向原 iOS 应用的个人
- * GitHub Pages 与邮箱，非本移植范畴；本应用以应用内协议为权威文本，故不移植这些外链。
- */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AboutScreen(
@@ -74,30 +68,34 @@ fun AboutScreen(
 
             SettingsSection(title = "关于温糯") {
                 Text(
-                    "本应用由 w1074 基于开源项目 AI Pocket Chat 修改制作",
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    modifier = Modifier.padding(horizontal = 16.dp),
-                )
-                Spacer(Modifier.height(8.dp))
-                Text(
-                    "感谢原作者 Marlon0066 及所有开源贡献者",
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    modifier = Modifier.padding(horizontal = 16.dp),
-                )
-                Spacer(Modifier.height(8.dp))
-                Text(
-                    "基于 GNU General Public License v3.0 分发",
+                    "温糯是一个内置的AI伴侣角色。她拥有自主情绪、长期记忆和温柔的性格，会在聊天中慢慢了解你、记住你，陪你度过每一天。",
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.padding(horizontal = 16.dp),
                 )
             }
 
-            SettingsSection(title = stringResource(R.string.about_section_ack)) {
+            SettingsSection(title = "关于本应用") {
                 Text(
-                    stringResource(R.string.about_ack_body),
+                    "本应用是基于开源项目 AI Pocket Chat 修改制作的本地AI虚拟陪伴应用。所有数据保存在设备本地，不需要连接外部服务器。你可以自己配置大模型API，与内置角色自由对话。",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(horizontal = 16.dp),
+                )
+            }
+
+            SettingsSection(title = "制作人") {
+                Text(
+                    "本应用由 w1074 制作。\n\n从人设设计、性格调试、功能模块搭建，到最终编译打包，全流程独立完成。",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(horizontal = 16.dp),
+                )
+            }
+
+            SettingsSection(title = "致谢") {
+                Text(
+                    "· 感谢 Marlon0066 及 AI Pocket Chat 项目，为本应用提供了完整的基础框架。\n\n· 感谢 ONNX Runtime 和 bge-small-zh 模型，提供了端侧中文向量记忆能力。\n\n· 感谢 sherpa-onnx 项目，让离线语音识别得以实现。\n\n· 感谢 Jetpack Compose 和 Material 3，让界面美观流畅。\n\n· 感谢所有开源贡献者，你们的付出让技术变得温暖。",
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.padding(horizontal = 16.dp),
@@ -109,7 +107,6 @@ fun AboutScreen(
     }
 }
 
-/** 用户协议复看（只读）：复用首启协议正文 [agreementContent]，无同意/拒绝按钮，仅返回。 */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AgreementViewScreen(onBack: () -> Unit) {
