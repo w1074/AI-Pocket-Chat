@@ -2465,14 +2465,14 @@
 	<string name="growth_disabled_hint">开启「角色成长」后可调整成长分析参数（在「系统功能」里开启）。</string>
 
 	<!-- 关于 (P12.1c，对齐 iOS SettingsView 关于段 + 本项目 sideload 实情) -->
-	<string name="about_title">关于</string>
-	<string name="about_entry_subtitle">版本信息 · 用户协议</string>
-	<string name="about_section_info">应用信息</string>
-	<string name="about_version">版本</string>
-	<string name="about_agreement">用户协议</string>
-	<string name="about_disclaimer">AI 回复由第三方服务生成，内容仅供参考，不代表本应用立场。</string>
-	<string name="about_section_ack">致谢</string>
-	<string name="about_ack_body">本应用为面向自己使用的安卓复刻。端上中文向量记忆基于 ONNX Runtime 与 bge-small-zh 模型，离线语音识别基于 sherpa-onnx；界面使用 Jetpack Compose 与 Material 3 构建。感谢这些开源项目。</string>
+    <string name="about_title">关于</string>
+    <string name="about_entry_subtitle">版本信息 · 用户协议</string>
+    <string name="about_section_info">应用信息</string>
+    <string name="about_version">版本</string>
+    <string name="about_agreement">用户协议</string>
+    <string name="about_disclaimer">AI 回复由第三方服务生成，内容仅供参考，不代表本应用立场。</string>
+    <string name="about_section_ack">关于本应用 · 制作人 · 致谢</string>
+    <string name="about_ack_body">【关于本应用】\n本应用是基于开源项目 AI Pocket Chat 修改制作的本地AI虚拟陪伴应用。所有数据保存在设备本地，不需要连接外部服务器。你可以自己配置大模型API，与内置角色自由对话。\n\n【预装角色：温糯】\n温糯是一个内置的AI伴侣角色，生于3月21日春分，16岁。她聪慧但生活迷糊，温柔敏感，拥有自主情绪和长期记忆，会在聊天中慢慢了解你。她的年龄会随时间自然增长，说话风格随之微调，但软萌底色不变。\n\n【关于角色创建】\n除了预装的温糯，你也可以在应用内自由创建新的AI角色，自定义他们的名字、性格、背景故事和说话方式。每一个角色都值得被认真对待。\n\n【制作人】\nw1074\n\n一个喜欢折腾的人，从人设设计、性格调试、功能模块搭建，到最终编译打包，全流程独立完成。\n\n【致谢】\n· 感谢 Marlon0066 及 AI Pocket Chat 项目，为本应用提供了完整的基础框架\n· 感谢 ONNX Runtime 与 bge-small-zh 模型，提供了端侧中文向量记忆能力\n· 感谢 sherpa-onnx 项目，让离线语音识别得以实现\n· 感谢 Jetpack Compose 与 Material 3，让界面美观流畅\n· 感谢所有开源贡献者，你们的付出让技术变得温暖</string>
 
 	<!-- 14.1 角色资料页 -->
 	<string name="profile_edit_character">编辑角色</string>
