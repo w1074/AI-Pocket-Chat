@@ -72,6 +72,29 @@ fun AboutScreen(
                 )
             }
 
+            SettingsSection(title = "关于温糯") {
+                Text(
+                    "本应用由 w1074 基于开源项目 AI Pocket Chat 修改制作",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(horizontal = 16.dp),
+                )
+                Spacer(Modifier.height(8.dp))
+                Text(
+                    "感谢原作者 Marlon0066 及所有开源贡献者",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(horizontal = 16.dp),
+                )
+                Spacer(Modifier.height(8.dp))
+                Text(
+                    "基于 GNU General Public License v3.0 分发",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(horizontal = 16.dp),
+                )
+            }
+
             SettingsSection(title = stringResource(R.string.about_section_ack)) {
                 Text(
                     stringResource(R.string.about_ack_body),
